@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@android:style/TextAppearance.DeviceDefault.Medium"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvOverview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:backgroundTint="?attr/colorPrimary"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp"
+        app:contentPadding="8dp"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="8dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/llLeft"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="2dp"
+                android:weightSum="6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvSwitch1Header"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="roll switch 1 status"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvSwitch1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvSwitch2Header"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="roll switch 2 status"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvSwitch2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvUltrasoundBarrierHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="height sensor status"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvUltrasoundBarrier"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llRight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="2dp"
+                android:weightSum="6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvEmergencyStopHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="emergency stop status"
+                    android:textAlignment="viewEnd"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvEmergencyStop"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textAlignment="viewEnd"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvLightBarrierHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="light barrier status"
+                    android:textAlignment="viewEnd"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvLightBarrier"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textAlignment="viewEnd"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvConnectionStatusHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="broker address"
+                    android:textAlignment="viewEnd"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvConnectionStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:textAlignment="viewEnd"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
